@@ -14,9 +14,7 @@ router.post('/', function (req, res, next) {
 
     const mail = require("@sendgrid/mail")
 
-    //let api ="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";
-
-    mail.setApiKey(api);
+    mail.setApiKey(/*api*/);
 
     const msg = {
         to: email,
