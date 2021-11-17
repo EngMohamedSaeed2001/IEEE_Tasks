@@ -1,2 +1,3 @@
-# IEEE_Verify_Email
+# IEEE_Tasks
+Collection of tasks
 Node js
