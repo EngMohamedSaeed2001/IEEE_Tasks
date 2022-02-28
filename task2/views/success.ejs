@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Success</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<style>
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+  background: #030005;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 180px;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% , -50%);
+      -ms-transform: translate(-50% , -50%);
+          transform: translate(-50% , -50%);
+  font-size: 124px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -12px;
+  color: #030005;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+  letter-spacing: -20px;
+}
+
+
+.notfound .notfound-404 h2 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #8400ff;
+  letter-spacing: 13px;
+  margin: 0;
+}
+
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ff005a;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  color: #8400ff;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+      font-size: 182px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+
+}
+a:hover{
+    background: #03e9f4;
+    color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent,#03e9f4);
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+</style>
+<body>
+
+	<div id="notfound">
+		<div class="notfound">
+			<div class="notfound-404">
+				<h1>Success</h1>
+
+			</div>
+			<a href="/users/table">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Continue
+            </a>
+		</div>
+
+
+	</div>
+
+
+</body>
+
+</html>
